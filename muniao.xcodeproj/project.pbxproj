@@ -44,6 +44,11 @@
 		AE5C5A021A63DF5A0036A67B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5C5A011A63DF5A0036A67B /* SystemConfiguration.framework */; };
 		AE5C5A041A63DFF90036A67B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5C5A031A63DFF90036A67B /* MobileCoreServices.framework */; };
 		AE5C5A061A63E0020036A67B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5C5A051A63E0020036A67B /* CFNetwork.framework */; };
+		AE6B54941A78895F0071A2EC /* OrderCellOne.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6B54931A78895F0071A2EC /* OrderCellOne.m */; };
+		AE6B54971A788A230071A2EC /* OrderCellTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6B54961A788A230071A2EC /* OrderCellTwo.m */; };
+		AE6B549A1A788A3E0071A2EC /* OrderCellThree.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6B54991A788A3E0071A2EC /* OrderCellThree.m */; };
+		AE6B549D1A788A990071A2EC /* OrderCellFour.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6B549C1A788A990071A2EC /* OrderCellFour.m */; };
+		AE6B54A01A788AC20071A2EC /* OrderCellFive.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6B549F1A788AC20071A2EC /* OrderCellFive.m */; };
 		AE6C6A861A5FC0BD000A59A7 /* dingdong.wav in Resources */ = {isa = PBXBuildFile; fileRef = AE6C6A851A5FC0BD000A59A7 /* dingdong.wav */; };
 		AE703F771A64C84B00B91B7A /* UIImage+KVNEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = AE703F741A64C84B00B91B7A /* UIImage+KVNEmpty.m */; };
 		AE703F781A64C84B00B91B7A /* UIImage+KVNImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = AE703F761A64C84B00B91B7A /* UIImage+KVNImageEffects.m */; };
@@ -165,6 +170,16 @@
 		AE5C5A011A63DF5A0036A67B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		AE5C5A031A63DFF90036A67B /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		AE5C5A051A63E0020036A67B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		AE6B54921A78895F0071A2EC /* OrderCellOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderCellOne.h; sourceTree = "<group>"; };
+		AE6B54931A78895F0071A2EC /* OrderCellOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderCellOne.m; sourceTree = "<group>"; };
+		AE6B54951A788A230071A2EC /* OrderCellTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderCellTwo.h; sourceTree = "<group>"; };
+		AE6B54961A788A230071A2EC /* OrderCellTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderCellTwo.m; sourceTree = "<group>"; };
+		AE6B54981A788A3E0071A2EC /* OrderCellThree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderCellThree.h; sourceTree = "<group>"; };
+		AE6B54991A788A3E0071A2EC /* OrderCellThree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderCellThree.m; sourceTree = "<group>"; };
+		AE6B549B1A788A990071A2EC /* OrderCellFour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderCellFour.h; sourceTree = "<group>"; };
+		AE6B549C1A788A990071A2EC /* OrderCellFour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderCellFour.m; sourceTree = "<group>"; };
+		AE6B549E1A788AC20071A2EC /* OrderCellFive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderCellFive.h; sourceTree = "<group>"; };
+		AE6B549F1A788AC20071A2EC /* OrderCellFive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderCellFive.m; sourceTree = "<group>"; };
 		AE6C6A851A5FC0BD000A59A7 /* dingdong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dingdong.wav; sourceTree = "<group>"; };
 		AE703F731A64C84B00B91B7A /* UIImage+KVNEmpty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+KVNEmpty.h"; sourceTree = "<group>"; };
 		AE703F741A64C84B00B91B7A /* UIImage+KVNEmpty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+KVNEmpty.m"; sourceTree = "<group>"; };
@@ -370,6 +385,23 @@
 			path = "Toast提示";
 			sourceTree = "<group>";
 		};
+		AE6B54911A7888B30071A2EC /* 订单cells */ = {
+			isa = PBXGroup;
+			children = (
+				AE6B54921A78895F0071A2EC /* OrderCellOne.h */,
+				AE6B54931A78895F0071A2EC /* OrderCellOne.m */,
+				AE6B54951A788A230071A2EC /* OrderCellTwo.h */,
+				AE6B54961A788A230071A2EC /* OrderCellTwo.m */,
+				AE6B54981A788A3E0071A2EC /* OrderCellThree.h */,
+				AE6B54991A788A3E0071A2EC /* OrderCellThree.m */,
+				AE6B549B1A788A990071A2EC /* OrderCellFour.h */,
+				AE6B549C1A788A990071A2EC /* OrderCellFour.m */,
+				AE6B549E1A788AC20071A2EC /* OrderCellFive.h */,
+				AE6B549F1A788AC20071A2EC /* OrderCellFive.m */,
+			);
+			path = "订单cells";
+			sourceTree = "<group>";
+		};
 		AE703F711A64C7BF00B91B7A /* KVNProgress透明指示层 */ = {
 			isa = PBXGroup;
 			children = (
@@ -531,6 +563,7 @@
 		AE82C4451A5D1E670047E08E /* 订单管理 */ = {
 			isa = PBXGroup;
 			children = (
+				AE6B54911A7888B30071A2EC /* 订单cells */,
 				AE0B10371A6909D1000AA8D7 /* 订单详情 */,
 				AE0B10341A6909C2000AA8D7 /* OrderViewController.h */,
 				AE0B10351A6909C2000AA8D7 /* OrderViewController.m */,
@@ -811,6 +844,7 @@
 				AE0B103E1A69100C000AA8D7 /* OrderDetailCellOne.m in Sources */,
 				AE8EF8401A6898C5005BDAFA /* ChangePriceViewController.m in Sources */,
 				AE0B100F1A68B0BC000AA8D7 /* Order.m in Sources */,
+				AE6B549D1A788A990071A2EC /* OrderCellFour.m in Sources */,
 				AE5C59E71A63601A0036A67B /* SDWebImageCompat.m in Sources */,
 				AE82C4261A5D1DF70047E08E /* ViewController.m in Sources */,
 				AE8EF8311A68984F005BDAFA /* HelpViewController.m in Sources */,
@@ -828,9 +862,12 @@
 				AE0B102E1A68BF88000AA8D7 /* OrderRemindCellTwo.m in Sources */,
 				AE5C59EA1A63601A0036A67B /* SDWebImageDownloaderOperation.m in Sources */,
 				AE0B10361A6909C2000AA8D7 /* OrderViewController.m in Sources */,
+				AE6B549A1A788A3E0071A2EC /* OrderCellThree.m in Sources */,
 				AE82C4231A5D1DF70047E08E /* AppDelegate.m in Sources */,
 				AE5C59F01A63601A0036A67B /* UIImageView+WebCache.m in Sources */,
+				AE6B54941A78895F0071A2EC /* OrderCellOne.m in Sources */,
 				AE5C59E51A63601A0036A67B /* NSData+GIF.m in Sources */,
+				AE6B54971A788A230071A2EC /* OrderCellTwo.m in Sources */,
 				AE79B8D41A6E4ACF00649545 /* SetTableViewController.m in Sources */,
 				AE8EF83D1A6898AF005BDAFA /* AddOrderViewController.m in Sources */,
 				AE8EF8371A68987D005BDAFA /* EarningViewController.m in Sources */,
@@ -843,6 +880,7 @@
 				AE703F781A64C84B00B91B7A /* UIImage+KVNImageEffects.m in Sources */,
 				AE8EF8431A6898DB005BDAFA /* ChangeStatusViewController.m in Sources */,
 				AE0B104A1A69108B000AA8D7 /* OrderDetailCellFive.m in Sources */,
+				AE6B54A01A788AC20071A2EC /* OrderCellFive.m in Sources */,
 				AE5C59E41A63601A0036A67B /* README.md in Sources */,
 				AE5C59EE1A63601A0036A67B /* UIImage+GIF.m in Sources */,
 				AE0B102B1A68BF77000AA8D7 /* OrderRemindCellOne.m in Sources */,

@@ -34,7 +34,7 @@
 #define URL_FOR_CASH @"http://appapi.muniao.com/server/app_user/api.do?op=cash"
 
 //订单列表
-#define URL_ORDER_LIST @"http://appapi.muniao.com/server/app_user/api.do?op=orderlist"
+#define URL_ORDER_LIST @"http://appapi.muniao.com/server/app_user/apiv2.do?op=orderlist"
 
 //订单收取定金
 #define URL_GET_HIRE @"http://appapi.muniao.com/server/app_user/api.do?op=hire"

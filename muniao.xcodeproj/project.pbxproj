@@ -44,6 +44,11 @@
 		AE5C5A021A63DF5A0036A67B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5C5A011A63DF5A0036A67B /* SystemConfiguration.framework */; };
 		AE5C5A041A63DFF90036A67B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5C5A031A63DFF90036A67B /* MobileCoreServices.framework */; };
 		AE5C5A061A63E0020036A67B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5C5A051A63E0020036A67B /* CFNetwork.framework */; };
+		AE6883801A79D4CA00432947 /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AE6883761A79D4CA00432947 /* MJRefresh.bundle */; };
+		AE6883811A79D4CA00432947 /* MJRefreshBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6883791A79D4CA00432947 /* MJRefreshBaseView.m */; };
+		AE6883821A79D4CA00432947 /* MJRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = AE68837B1A79D4CA00432947 /* MJRefreshConst.m */; };
+		AE6883831A79D4CA00432947 /* MJRefreshFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE68837D1A79D4CA00432947 /* MJRefreshFooterView.m */; };
+		AE6883841A79D4CA00432947 /* MJRefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE68837F1A79D4CA00432947 /* MJRefreshHeaderView.m */; };
 		AE6B54941A78895F0071A2EC /* OrderCellOne.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6B54931A78895F0071A2EC /* OrderCellOne.m */; };
 		AE6B54971A788A230071A2EC /* OrderCellTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6B54961A788A230071A2EC /* OrderCellTwo.m */; };
 		AE6B549A1A788A3E0071A2EC /* OrderCellThree.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6B54991A788A3E0071A2EC /* OrderCellThree.m */; };
@@ -170,6 +175,16 @@
 		AE5C5A011A63DF5A0036A67B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		AE5C5A031A63DFF90036A67B /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		AE5C5A051A63E0020036A67B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		AE6883761A79D4CA00432947 /* MJRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MJRefresh.bundle; sourceTree = "<group>"; };
+		AE6883771A79D4CA00432947 /* MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefresh.h; sourceTree = "<group>"; };
+		AE6883781A79D4CA00432947 /* MJRefreshBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBaseView.h; sourceTree = "<group>"; };
+		AE6883791A79D4CA00432947 /* MJRefreshBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshBaseView.m; sourceTree = "<group>"; };
+		AE68837A1A79D4CA00432947 /* MJRefreshConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshConst.h; sourceTree = "<group>"; };
+		AE68837B1A79D4CA00432947 /* MJRefreshConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshConst.m; sourceTree = "<group>"; };
+		AE68837C1A79D4CA00432947 /* MJRefreshFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshFooterView.h; sourceTree = "<group>"; };
+		AE68837D1A79D4CA00432947 /* MJRefreshFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshFooterView.m; sourceTree = "<group>"; };
+		AE68837E1A79D4CA00432947 /* MJRefreshHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshHeaderView.h; sourceTree = "<group>"; };
+		AE68837F1A79D4CA00432947 /* MJRefreshHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshHeaderView.m; sourceTree = "<group>"; };
 		AE6B54921A78895F0071A2EC /* OrderCellOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderCellOne.h; sourceTree = "<group>"; };
 		AE6B54931A78895F0071A2EC /* OrderCellOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderCellOne.m; sourceTree = "<group>"; };
 		AE6B54951A788A230071A2EC /* OrderCellTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderCellTwo.h; sourceTree = "<group>"; };
@@ -383,6 +398,23 @@
 				AE5C59FD1A6368B20036A67B /* Toast+UIView.m */,
 			);
 			path = "Toast提示";
+			sourceTree = "<group>";
+		};
+		AE6883751A79D49600432947 /* MJRefreshView */ = {
+			isa = PBXGroup;
+			children = (
+				AE6883761A79D4CA00432947 /* MJRefresh.bundle */,
+				AE6883771A79D4CA00432947 /* MJRefresh.h */,
+				AE6883781A79D4CA00432947 /* MJRefreshBaseView.h */,
+				AE6883791A79D4CA00432947 /* MJRefreshBaseView.m */,
+				AE68837A1A79D4CA00432947 /* MJRefreshConst.h */,
+				AE68837B1A79D4CA00432947 /* MJRefreshConst.m */,
+				AE68837C1A79D4CA00432947 /* MJRefreshFooterView.h */,
+				AE68837D1A79D4CA00432947 /* MJRefreshFooterView.m */,
+				AE68837E1A79D4CA00432947 /* MJRefreshHeaderView.h */,
+				AE68837F1A79D4CA00432947 /* MJRefreshHeaderView.m */,
+			);
+			path = MJRefreshView;
 			sourceTree = "<group>";
 		};
 		AE6B54911A7888B30071A2EC /* 订单cells */ = {
@@ -628,6 +660,7 @@
 		AE82C44D1A5D23780047E08E /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				AE6883751A79D49600432947 /* MJRefreshView */,
 				AE703F711A64C7BF00B91B7A /* KVNProgress透明指示层 */,
 				AE5C59FB1A63687C0036A67B /* Toast提示 */,
 				AE5C59C61A63601A0036A67B /* SDWebImage */,
@@ -811,6 +844,7 @@
 			files = (
 				AE82C44B1A5D22900047E08E /* Images.xcassets in Resources */,
 				AE82C4291A5D1DF70047E08E /* Main.storyboard in Resources */,
+				AE6883801A79D4CA00432947 /* MJRefresh.bundle in Resources */,
 				AE6C6A861A5FC0BD000A59A7 /* dingdong.wav in Resources */,
 				AE82C42E1A5D1DF70047E08E /* LaunchScreen.xib in Resources */,
 				AE5C59E31A63601A0036A67B /* LICENSE in Resources */,
@@ -838,6 +872,8 @@
 				AE0B10151A68B152000AA8D7 /* Tenant.m in Sources */,
 				AE703F771A64C84B00B91B7A /* UIImage+KVNEmpty.m in Sources */,
 				AEE5F2CF1A67BF3600B3A1D2 /* MainViewController.m in Sources */,
+				AE6883841A79D4CA00432947 /* MJRefreshHeaderView.m in Sources */,
+				AE6883811A79D4CA00432947 /* MJRefreshBaseView.m in Sources */,
 				AE0B10411A691024000AA8D7 /* OrderDetailCellTwo.m in Sources */,
 				AE8EF83A1A689892005BDAFA /* MyReRaiseViewController.m in Sources */,
 				AE82C4511A5D24CC0047E08E /* iuiueCHKeychain.m in Sources */,
@@ -849,8 +885,10 @@
 				AE82C4261A5D1DF70047E08E /* ViewController.m in Sources */,
 				AE8EF8311A68984F005BDAFA /* HelpViewController.m in Sources */,
 				AE703F7C1A64C85600B91B7A /* KVNProgress.m in Sources */,
+				AE6883831A79D4CA00432947 /* MJRefreshFooterView.m in Sources */,
 				AE5C59FE1A6368B20036A67B /* Toast+UIView.m in Sources */,
 				AE79B8CF1A6E04B200649545 /* MYViewController.m in Sources */,
+				AE6883821A79D4CA00432947 /* MJRefreshConst.m in Sources */,
 				AE82C4571A5D2D440047E08E /* ChatViewController.m in Sources */,
 				AE8EF8341A689866005BDAFA /* RoomCountViewController.m in Sources */,
 				AE762A8C1A70F2BF00EC7D18 /* ForgetPWController.m in Sources */,
@@ -1023,6 +1061,7 @@
 					"$(PROJECT_DIR)/muniao/Libraries/asi",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1042,6 +1081,7 @@
 					"$(PROJECT_DIR)/muniao/Libraries/asi",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

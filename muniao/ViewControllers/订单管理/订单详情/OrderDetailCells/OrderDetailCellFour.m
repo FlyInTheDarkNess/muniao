@@ -7,6 +7,7 @@
 //
 
 #import "OrderDetailCellFour.h"
+#import "UIImageView+WebCache.h"//引入加载图片的头文件
 
 @interface OrderDetailCellFour ()
 
@@ -38,6 +39,15 @@
 }
 
 -(void)cellRefresh{
+    
+    [_tenantImageView setImageWithURL:[NSURL URLWithString:_order.tenantPicUrl]];
+    _tenantNameLabel.text = [NSString stringWithFormat:@"%@",_order.tenantName];
+    _renzhengLabel.text = @"木鸟认证用户";
+    _sexLabel.text = @"男 河北 - 石家庄";
+//    _remarkLabel.text = @"";
+    
+    
+    
     NSLog(@"订单详情：第四行加载");
 }
 

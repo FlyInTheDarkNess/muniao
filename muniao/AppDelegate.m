@@ -38,6 +38,10 @@
     //发送统计数据
     [self PostStatistics];
     
+    //自动更新
+    [self Update];
+    
+    
 //    [[UINavigationBar appearance] setBarTintColor:[UIColor whiteColor]];
 //    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     
@@ -147,6 +151,9 @@
         NSDictionary *dic = [NSDictionary dictionaryWithObject:@"open" forKey:@"status"];
         
         [[NSNotificationCenter defaultCenter] postNotificationName:NO_WebSocketStatusChange object:nil userInfo:dic];
+        
+        //当前网络状态存储
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:UserDefaults_IsConnect];
     }
     else if(status == kReachableViaWiFi)
     {
@@ -155,10 +162,17 @@
         NSDictionary *dic = [NSDictionary dictionaryWithObject:@"open" forKey:@"status"];
         
         [[NSNotificationCenter defaultCenter] postNotificationName:NO_WebSocketStatusChange object:nil userInfo:dic];
+        
+        //当前网络状态存储
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:UserDefaults_IsConnect];
+        
     }else
     {
         //        printf("\n无网络\n");
         [[UIApplication sharedApplication].keyWindow makeToast:@"当前无网络连接" duration:1.5 position:@"center"];
+        
+        //当前网络状态存储
+        [[NSUserDefaults standardUserDefaults] setBool:NO forKey:UserDefaults_IsConnect];
     }
     
 }

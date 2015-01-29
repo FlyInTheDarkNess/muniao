@@ -12,11 +12,23 @@
 #import "ASIFormDataRequest.h"
 #import "KVNProgress.h"
 #import "Order.h"
+#import "MJRefresh.h"
+#import "OrderCellOne.h"
+#import "OrderCellTwo.h"
+#import "OrderCellThree.h"
+#import "OrderCellFour.h"
+#import "OrderCellFive.h"
+#import "OrderDetailViewController.h"
 
 
-@interface OrderViewController ()<UITableViewDelegate,UITableViewDataSource>
+
+
+@interface OrderViewController ()<UITableViewDelegate,UITableViewDataSource,MJRefreshBaseViewDelegate>
 {
     NSMutableArray *orderArr;//订单列表
+    NSInteger pageOfOrder;//当前订单列表页码
+    MJRefreshHeaderView *_header;
+    MJRefreshFooterView *_footer;
 }
 
 @property (weak, nonatomic) IBOutlet UITableView *orderTableView;
@@ -33,6 +45,8 @@
     _orderTableView.backgroundColor = [UIColor groupTableViewBackgroundColor];
     _orderTableView.tableFooterView = [[UIView alloc]init];
     
+    
+    [self setFreshView];
     // Do any additional setup after loading the view.
 }
 
@@ -44,6 +58,8 @@
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    [_footer endRefreshing];
+    [_header endRefreshing];
     return orderArr.count;
 }
 
@@ -54,22 +70,45 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
 
+    Order *order = (Order *)orderArr[indexPath.section];
     UITableViewCell *cell;
     switch (indexPath.row) {
         case 0:
+        {
             cell = [tableView dequeueReusableCellWithIdentifier:@"muniao_OrderOne"];
+            OrderCellOne *cellOne = (OrderCellOne *)cell;
+            cellOne.cellOrder = order;
+        }
+            
             break;
         case 1:
+        {
             cell = [tableView dequeueReusableCellWithIdentifier:@"muniao_OrderTwo"];
+            OrderCellTwo *cellOne = (OrderCellTwo *)cell;
+            cellOne.cellOrder = order;
+        }
             break;
         case 2:
+        {
             cell = [tableView dequeueReusableCellWithIdentifier:@"muniao_OrderThree"];
+            OrderCellThree *cellOne = (OrderCellThree *)cell;
+            cellOne.cellOrder = order;
+        }
+            
             break;
         case 3:
+        {
             cell = [tableView dequeueReusableCellWithIdentifier:@"muniao_OrderFour"];
+            OrderCellFour *cellOne = (OrderCellFour *)cell;
+            cellOne.cellOrder = order;
+        }
             break;
         case 4:
+        {
             cell = [tableView dequeueReusableCellWithIdentifier:@"muniao_OrderFive"];
+            OrderCellFive *cellOne = (OrderCellFive *)cell;
+            cellOne.cellOrder = order;
+        }
             break;
             
         default:
@@ -102,12 +141,11 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSLog(@"点击订单提醒");
-    UIViewController *next = [[self storyboard] instantiateViewControllerWithIdentifier:@"muniao_OrderDetail"];
+    Order *order = (Order *)orderArr[indexPath.section];
+    OrderDetailViewController *next = [[self storyboard] instantiateViewControllerWithIdentifier:@"muniao_OrderDetail"];
+    next.orderId = order.orderId;
     next.hidesBottomBarWhenPushed = YES;
-    //    [self presentModalViewController:next animated:NO];
-    //    OrderRemindViewController *orderRemind = [[OrderRemindViewController alloc]initWithNibName:@"OrderRemindViewController" bundle:nil];
     [self.navigationController pushViewController:next animated:YES];
-    
     
 }
 
@@ -138,9 +176,12 @@
     
     __weak ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:[NSURL URLWithString:URL_ORDER_LIST]];
     
+    
+    NSString *page = [NSString stringWithFormat:@"%d",pageOfOrder];
+    
     [request addPostValue:MY_UID forKey:@"uid"];
     [request addPostValue:MY_ZEND forKey:@"zend"];
-    [request addPostValue:@"1" forKey:@"page"];
+    [request addPostValue:page forKey:@"page"];
     
     request.requestMethod = @"POST";
     
@@ -156,16 +197,44 @@
                 
                 NSArray *arr = resultDict[@"list"];
                 
+                if (UpDown) {
+                    
+                }else{
+                    [orderArr removeAllObjects];
+                }
+                
                 for (NSDictionary *dic in arr) {
                     NSString *prepay = [NSString stringWithFormat:@"%.2f",[dic[@"amount"] floatValue] + [dic[@"accounts"] floatValue]];
+                    NSString *orderid = [NSString stringWithFormat:@"%@",dic[@"orderid"]];
+                    NSString *ordernum = [NSString stringWithFormat:@"%@",dic[@"ordernum"]];
+                    NSString *total_Price = [NSString stringWithFormat:@"%@",dic[@"total_price"]];
+                    NSString *start_Date = [NSString stringWithFormat:@"%@",dic[@"start_date"]];
+                    NSString *end_Date = [NSString stringWithFormat:@"%@",dic[@"end_date"]];
+                    NSString *roomTitle = [NSString stringWithFormat:@"%@",dic[@"title"]];
+                    NSString *roomTitle2 = [NSString stringWithFormat:@"%@",dic[@"title2"]];
+                    NSString *tenantName = [NSString stringWithFormat:@"%@",dic[@"username"]];
+                    NSString *room_Id = [NSString stringWithFormat:@"无"];
+                    NSString *rentNumber = [NSString stringWithFormat:@"%@",dic[@"rentnumber"]];
+                    NSString *sameRoom = [NSString stringWithFormat:@"%@",dic[@"sameroom"]];
+                    NSString *rent_Type = [NSString stringWithFormat:@"无"];
+                    NSString *addDate = [NSString stringWithFormat:@"无"];
+                    NSString *canPayDate = [NSString stringWithFormat:@"无"];
+                    NSString *source = [NSString stringWithFormat:@"无"];
+                    NSString *RoomPicUrl = [NSString stringWithFormat:@"%@",dic[@"picurl"]];
+                    NSString *status = [NSString stringWithFormat:@"%@",dic[@"status"]];
+                    NSString *ruzhu = [NSString stringWithFormat:@"无"];
+                    NSString *refundType = [NSString stringWithFormat:@"无"];
+                    NSString *moblie = [NSString stringWithFormat:@"%@",dic[@"mobile"]];
+                    NSString *tenantPicUrl = [NSString stringWithFormat:@"%@",dic[@"headpic"]];
                     
-                    Order *order = [[Order alloc]initWithOrderId:dic[@"orderid"] orderNum:dic[@"ordernum"] total_Price:dic[@"total_price"] prepay_Price:prepay start_Date:dic[@"start_date"] end_Date:dic[@"end_date"] roomTitle:dic[@"title"] roomTitle2:dic[@"title2"] tenantName:dic[@"username"] room_Id:@"无" rentNumber:dic[@"rentnumber"] sameRoom:dic[@"sameroom"] rent_Type:@"" addDate:@"" canPayDate:@"" source:@"" RoomPicUrl:dic[@"picurl"] status:dic[@"status"] ruzhu:@"" refundType:@"" moblie:dic[@"mobile"] tenantPicUrl:dic[@"headpic"] detail_Price:@""];
+                    Order *order = [[Order alloc]initWithOrderId:orderid orderNum:ordernum total_Price:total_Price prepay_Price:prepay start_Date:start_Date end_Date:end_Date roomTitle:roomTitle roomTitle2:roomTitle2 tenantName:tenantName room_Id:room_Id rentNumber:rentNumber sameRoom:sameRoom rent_Type:rent_Type addDate:addDate canPayDate:canPayDate source:source RoomPicUrl:RoomPicUrl status:status ruzhu:ruzhu refundType:refundType moblie:moblie tenantPicUrl:tenantPicUrl detail_Price:@""];
                     [orderArr addObject:order];
                 }
                 
                 
                 
                 [_orderTableView reloadData];
+                pageOfOrder++;
                 
             }else{
                 NSString *srr = [NSString stringWithFormat:@"%@",resultDict[@"message"]];
@@ -194,10 +263,36 @@
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    
-    [self getOrderList:YES];
+    pageOfOrder = 1;
+    [self getOrderList:NO];
 }
 
+
+#pragma mark - mjfresh
+- (void)setFreshView{
+    // 下拉刷新
+    _header = [[MJRefreshHeaderView alloc] init];
+    _header.delegate = self;
+    _header.scrollView = _orderTableView;
+    
+    // 上拉加载更多
+    _footer = [[MJRefreshFooterView alloc] init];
+    _footer.delegate = self;
+    _footer.scrollView = _orderTableView;
+}
+#pragma mark 代理方法-进入刷新状态就会调用
+- (void)refreshViewBeginRefreshing:(MJRefreshBaseView *)refreshView
+{
+    if (_header == refreshView) {
+        
+        pageOfOrder = 1;
+        [self getOrderList:NO];
+        
+    } else {
+        
+        [self getOrderList:YES];
+    }
+}
 
 /*
 #pragma mark - Navigation

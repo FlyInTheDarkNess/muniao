@@ -33,8 +33,11 @@
 //申请提现接口
 #define URL_FOR_CASH @"http://appapi.muniao.com/server/app_user/api.do?op=cash"
 
-//订单列表
+//订单列表(新)
 #define URL_ORDER_LIST @"http://appapi.muniao.com/server/app_user/apiv2.do?op=orderlist"
+
+//订单详情
+#define URL_ORDER_DETAIL @"http://appapi.muniao.com/server/app_user/apiv2.do?op=orderinfo"
 
 //订单收取定金
 #define URL_GET_HIRE @"http://appapi.muniao.com/server/app_user/api.do?op=hire"
@@ -78,9 +81,12 @@
 //提现记录
 #define URL_MY_GETCASH_DETAIL @"http://appapi.muniao.com/server/app_user/api.do?op=cashlogs"
 
-// 订单详情接口
-#define URL_ORDER_DETAIL @"http://appapi.muniao.com/server/app_user/api.do?op=orderinfo"
 
+/*
+// 订单详情接口
+#define URL_Message_DETAIL @"http://appapi.muniao.com/server/app_user/api.do?op=orderinfo"
+
+*/
 //UDID钥匙串名称
 #define KEYCHAIN_UDID @"com.company.muniao.udid"
 
@@ -131,6 +137,10 @@
 
 //获取房东店铺名称
 #define MY_OWNERNAME ((NSString *)[[NSUserDefaults standardUserDefaults] stringForKey:UDKEY_OWNERNAME])
+
+//获取当前网络状态
+#define MY_ISCONNECT ((BOOL *)[[NSUserDefaults standardUserDefaults] boolForKey:UserDefaults_IsConnect])
+
 
 
 //通知名称：改变websocket当前状态
@@ -241,6 +251,9 @@
 
 //震动设置
 #define UserDefaults_Shake @"muniao.shake"
+
+//是否连接网络
+#define UserDefaults_IsConnect @"muniao.isconnect"
 
 
 

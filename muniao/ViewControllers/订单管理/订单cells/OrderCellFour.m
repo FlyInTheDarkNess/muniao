@@ -7,6 +7,7 @@
 //
 
 #import "OrderCellFour.h"
+#import "UIImageView+WebCache.h"//引入加载图片的头文件
 
 @interface OrderCellFour ()
 
@@ -27,6 +28,12 @@
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
+}
+
+-(void)setCellOrder:(Order *)cellOrder{
+    [_tenantImageView setImageWithURL:[NSURL URLWithString:cellOrder.tenantPicUrl]];
+    _tenantNameLabel.text = cellOrder.tenantName;
+//    _RemarksLabel.text = cellOrder.;
 }
 
 @end

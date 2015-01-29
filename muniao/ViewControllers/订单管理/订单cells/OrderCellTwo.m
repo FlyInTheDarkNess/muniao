@@ -27,4 +27,8 @@
     // Configure the view for the selected state
 }
 
+-(void)setCellOrder:(Order *)cellOrder{
+    _orderNumberLabel.text = cellOrder.orderNum;
+}
+
 @end

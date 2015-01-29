@@ -7,6 +7,7 @@
 //
 
 #import "OrderCellThree.h"
+#import "UIImageView+WebCache.h"//引入加载图片的头文件
 
 @interface OrderCellThree ()
 
@@ -32,5 +33,14 @@
 
     // Configure the view for the selected state
 }
+
+-(void)setCellOrder:(Order *)cellOrder{
+    [_roomImageView setImageWithURL:[NSURL URLWithString:cellOrder.RoomPicUrl]];
+    _roomNameLabel.text = cellOrder.roomTitle;
+    _inDateLabel.text = cellOrder.start_Date;
+    _outDateLabel.text = [NSString stringWithFormat:@"离店时间：%@",cellOrder.end_Date];
+    _personNumberLabel.text = [NSString stringWithFormat:@"入住人数：%@",cellOrder.rentNumber];
+}
+
 
 @end

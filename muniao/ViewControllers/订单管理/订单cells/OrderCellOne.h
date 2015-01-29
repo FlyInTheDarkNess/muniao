@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Order.h"
 
 @interface OrderCellOne : UITableViewCell
+
+@property (nonatomic,strong) Order *cellOrder;
+
 
 @end

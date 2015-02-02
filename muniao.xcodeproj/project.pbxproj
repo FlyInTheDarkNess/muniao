@@ -55,11 +55,22 @@
 		AE6B549D1A788A990071A2EC /* OrderCellFour.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6B549C1A788A990071A2EC /* OrderCellFour.m */; };
 		AE6B54A01A788AC20071A2EC /* OrderCellFive.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6B549F1A788AC20071A2EC /* OrderCellFive.m */; };
 		AE6C6A861A5FC0BD000A59A7 /* dingdong.wav in Resources */ = {isa = PBXBuildFile; fileRef = AE6C6A851A5FC0BD000A59A7 /* dingdong.wav */; };
+		AE6E0E121A7F18B2001CE038 /* iuiueChatListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6E0E111A7F18B2001CE038 /* iuiueChatListViewController.m */; };
 		AE703F771A64C84B00B91B7A /* UIImage+KVNEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = AE703F741A64C84B00B91B7A /* UIImage+KVNEmpty.m */; };
 		AE703F781A64C84B00B91B7A /* UIImage+KVNImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = AE703F761A64C84B00B91B7A /* UIImage+KVNImageEffects.m */; };
 		AE703F7C1A64C85600B91B7A /* KVNProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = AE703F7B1A64C85600B91B7A /* KVNProgress.m */; };
 		AE703F7F1A64C86500B91B7A /* KVNProgressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE703F7E1A64C86500B91B7A /* KVNProgressView.xib */; };
 		AE762A8C1A70F2BF00EC7D18 /* ForgetPWController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE762A8B1A70F2BF00EC7D18 /* ForgetPWController.m */; };
+		AE786A0E1A7B6E0B00367E92 /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = AE786A0D1A7B6E0B00367E92 /* SRWebSocket.m */; };
+		AE786A371A7B6F0900367E92 /* CellFrameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE786A2A1A7B6F0900367E92 /* CellFrameModel.m */; };
+		AE786A391A7B6F0900367E92 /* iuiueChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE786A2E1A7B6F0900367E92 /* iuiueChatViewController.m */; };
+		AE786A3A1A7B6F0900367E92 /* MessageCellone.m in Sources */ = {isa = PBXBuildFile; fileRef = AE786A301A7B6F0900367E92 /* MessageCellone.m */; };
+		AE786A3B1A7B6F0900367E92 /* MessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE786A321A7B6F0900367E92 /* MessageModel.m */; };
+		AE786A3C1A7B6F0900367E92 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = AE786A341A7B6F0900367E92 /* NSString+Extension.m */; };
+		AE786A3D1A7B6F0900367E92 /* UIImage+ResizeImage.m in Sources */ = {isa = PBXBuildFile; fileRef = AE786A361A7B6F0900367E92 /* UIImage+ResizeImage.m */; };
+		AE786A3F1A7B76C500367E92 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE786A3E1A7B76C500367E92 /* MapKit.framework */; };
+		AE786A411A7B76D900367E92 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE786A401A7B76D900367E92 /* Security.framework */; };
+		AE786A461A7B831100367E92 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AE786A451A7B831100367E92 /* libicucore.dylib */; };
 		AE79B8CF1A6E04B200649545 /* MYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE79B8CE1A6E04B200649545 /* MYViewController.m */; };
 		AE79B8D41A6E4ACF00649545 /* SetTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE79B8D31A6E4ACF00649545 /* SetTableViewController.m */; };
 		AE79B8D91A6E590C00649545 /* MessageRemindTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE79B8D81A6E590C00649545 /* MessageRemindTableViewController.m */; };
@@ -71,7 +82,6 @@
 		AE82C43A1A5D1DF70047E08E /* muniaoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE82C4391A5D1DF70047E08E /* muniaoTests.m */; };
 		AE82C44B1A5D22900047E08E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE82C44A1A5D22900047E08E /* Images.xcassets */; };
 		AE82C4511A5D24CC0047E08E /* iuiueCHKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = AE82C4501A5D24CC0047E08E /* iuiueCHKeychain.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		AE82C4571A5D2D440047E08E /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE82C4561A5D2D440047E08E /* ChatViewController.m */; };
 		AE8EF8311A68984F005BDAFA /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8EF8301A68984F005BDAFA /* HelpViewController.m */; };
 		AE8EF8341A689866005BDAFA /* RoomCountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8EF8331A689866005BDAFA /* RoomCountViewController.m */; };
 		AE8EF8371A68987D005BDAFA /* EarningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8EF8361A68987D005BDAFA /* EarningViewController.m */; };
@@ -196,6 +206,8 @@
 		AE6B549E1A788AC20071A2EC /* OrderCellFive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderCellFive.h; sourceTree = "<group>"; };
 		AE6B549F1A788AC20071A2EC /* OrderCellFive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderCellFive.m; sourceTree = "<group>"; };
 		AE6C6A851A5FC0BD000A59A7 /* dingdong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dingdong.wav; sourceTree = "<group>"; };
+		AE6E0E101A7F18B2001CE038 /* iuiueChatListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iuiueChatListViewController.h; sourceTree = "<group>"; };
+		AE6E0E111A7F18B2001CE038 /* iuiueChatListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iuiueChatListViewController.m; sourceTree = "<group>"; };
 		AE703F731A64C84B00B91B7A /* UIImage+KVNEmpty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+KVNEmpty.h"; sourceTree = "<group>"; };
 		AE703F741A64C84B00B91B7A /* UIImage+KVNEmpty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+KVNEmpty.m"; sourceTree = "<group>"; };
 		AE703F751A64C84B00B91B7A /* UIImage+KVNImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+KVNImageEffects.h"; sourceTree = "<group>"; };
@@ -205,6 +217,23 @@
 		AE703F7E1A64C86500B91B7A /* KVNProgressView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KVNProgressView.xib; sourceTree = "<group>"; };
 		AE762A8A1A70F2BF00EC7D18 /* ForgetPWController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgetPWController.h; sourceTree = "<group>"; };
 		AE762A8B1A70F2BF00EC7D18 /* ForgetPWController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgetPWController.m; sourceTree = "<group>"; };
+		AE786A0C1A7B6E0B00367E92 /* SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRWebSocket.h; sourceTree = "<group>"; };
+		AE786A0D1A7B6E0B00367E92 /* SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRWebSocket.m; sourceTree = "<group>"; };
+		AE786A291A7B6F0900367E92 /* CellFrameModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellFrameModel.h; sourceTree = "<group>"; };
+		AE786A2A1A7B6F0900367E92 /* CellFrameModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellFrameModel.m; sourceTree = "<group>"; };
+		AE786A2D1A7B6F0900367E92 /* iuiueChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iuiueChatViewController.h; sourceTree = "<group>"; };
+		AE786A2E1A7B6F0900367E92 /* iuiueChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iuiueChatViewController.m; sourceTree = "<group>"; };
+		AE786A2F1A7B6F0900367E92 /* MessageCellone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageCellone.h; sourceTree = "<group>"; };
+		AE786A301A7B6F0900367E92 /* MessageCellone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageCellone.m; sourceTree = "<group>"; };
+		AE786A311A7B6F0900367E92 /* MessageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageModel.h; sourceTree = "<group>"; };
+		AE786A321A7B6F0900367E92 /* MessageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageModel.m; sourceTree = "<group>"; };
+		AE786A331A7B6F0900367E92 /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
+		AE786A341A7B6F0900367E92 /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
+		AE786A351A7B6F0900367E92 /* UIImage+ResizeImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ResizeImage.h"; sourceTree = "<group>"; };
+		AE786A361A7B6F0900367E92 /* UIImage+ResizeImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ResizeImage.m"; sourceTree = "<group>"; };
+		AE786A3E1A7B76C500367E92 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		AE786A401A7B76D900367E92 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		AE786A451A7B831100367E92 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		AE79B8CD1A6E04B200649545 /* MYViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYViewController.h; sourceTree = "<group>"; };
 		AE79B8CE1A6E04B200649545 /* MYViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYViewController.m; sourceTree = "<group>"; };
 		AE79B8D21A6E4ACF00649545 /* SetTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetTableViewController.h; sourceTree = "<group>"; };
@@ -227,8 +256,6 @@
 		AE82C44A1A5D22900047E08E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AE82C44F1A5D24CC0047E08E /* iuiueCHKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iuiueCHKeychain.h; sourceTree = "<group>"; };
 		AE82C4501A5D24CC0047E08E /* iuiueCHKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iuiueCHKeychain.m; sourceTree = "<group>"; };
-		AE82C4551A5D2D440047E08E /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
-		AE82C4561A5D2D440047E08E /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
 		AE8EF82F1A68984F005BDAFA /* HelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpViewController.h; sourceTree = "<group>"; };
 		AE8EF8301A68984F005BDAFA /* HelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpViewController.m; sourceTree = "<group>"; };
 		AE8EF8321A689866005BDAFA /* RoomCountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoomCountViewController.h; sourceTree = "<group>"; };
@@ -258,6 +285,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE786A461A7B831100367E92 /* libicucore.dylib in Frameworks */,
+				AE786A411A7B76D900367E92 /* Security.framework in Frameworks */,
+				AE786A3F1A7B76C500367E92 /* MapKit.framework in Frameworks */,
 				AE5C5A061A63E0020036A67B /* CFNetwork.framework in Frameworks */,
 				AE5C5A041A63DFF90036A67B /* MobileCoreServices.framework in Frameworks */,
 				AE5C5A021A63DF5A0036A67B /* SystemConfiguration.framework in Frameworks */,
@@ -481,6 +511,34 @@
 			path = "忘记密码";
 			sourceTree = "<group>";
 		};
+		AE786A0B1A7B6DD500367E92 /* SRWebSocket聊天 */ = {
+			isa = PBXGroup;
+			children = (
+				AE786A0C1A7B6E0B00367E92 /* SRWebSocket.h */,
+				AE786A0D1A7B6E0B00367E92 /* SRWebSocket.m */,
+			);
+			path = "SRWebSocket聊天";
+			sourceTree = "<group>";
+		};
+		AE786A281A7B6F0900367E92 /* 聊天页面 */ = {
+			isa = PBXGroup;
+			children = (
+				AE786A291A7B6F0900367E92 /* CellFrameModel.h */,
+				AE786A2A1A7B6F0900367E92 /* CellFrameModel.m */,
+				AE786A2D1A7B6F0900367E92 /* iuiueChatViewController.h */,
+				AE786A2E1A7B6F0900367E92 /* iuiueChatViewController.m */,
+				AE786A2F1A7B6F0900367E92 /* MessageCellone.h */,
+				AE786A301A7B6F0900367E92 /* MessageCellone.m */,
+				AE786A311A7B6F0900367E92 /* MessageModel.h */,
+				AE786A321A7B6F0900367E92 /* MessageModel.m */,
+				AE786A331A7B6F0900367E92 /* NSString+Extension.h */,
+				AE786A341A7B6F0900367E92 /* NSString+Extension.m */,
+				AE786A351A7B6F0900367E92 /* UIImage+ResizeImage.h */,
+				AE786A361A7B6F0900367E92 /* UIImage+ResizeImage.m */,
+			);
+			path = "聊天页面";
+			sourceTree = "<group>";
+		};
 		AE79B8D11A6E4A9E00649545 /* 设置 */ = {
 			isa = PBXGroup;
 			children = (
@@ -502,6 +560,9 @@
 		AE82C4111A5D1DF70047E08E = {
 			isa = PBXGroup;
 			children = (
+				AE786A451A7B831100367E92 /* libicucore.dylib */,
+				AE786A401A7B76D900367E92 /* Security.framework */,
+				AE786A3E1A7B76C500367E92 /* MapKit.framework */,
 				AE5C5A051A63E0020036A67B /* CFNetwork.framework */,
 				AE5C5A031A63DFF90036A67B /* MobileCoreServices.framework */,
 				AE5C5A011A63DF5A0036A67B /* SystemConfiguration.framework */,
@@ -575,7 +636,7 @@
 			isa = PBXGroup;
 			children = (
 				AE82C4471A5D1E7D0047E08E /* 主页 */,
-				AE82C4461A5D1E710047E08E /* Chat */,
+				AE82C4461A5D1E710047E08E /* 聊天 */,
 				AE82C4451A5D1E670047E08E /* 订单管理 */,
 				AE82C4441A5D1E560047E08E /* 我的 */,
 			);
@@ -603,13 +664,13 @@
 			path = "订单管理";
 			sourceTree = "<group>";
 		};
-		AE82C4461A5D1E710047E08E /* Chat */ = {
+		AE82C4461A5D1E710047E08E /* 聊天 */ = {
 			isa = PBXGroup;
 			children = (
-				AE82C4551A5D2D440047E08E /* ChatViewController.h */,
-				AE82C4561A5D2D440047E08E /* ChatViewController.m */,
+				AE6E0E101A7F18B2001CE038 /* iuiueChatListViewController.h */,
+				AE6E0E111A7F18B2001CE038 /* iuiueChatListViewController.m */,
 			);
-			name = Chat;
+			path = "聊天";
 			sourceTree = "<group>";
 		};
 		AE82C4471A5D1E7D0047E08E /* 主页 */ = {
@@ -660,6 +721,8 @@
 		AE82C44D1A5D23780047E08E /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				AE786A281A7B6F0900367E92 /* 聊天页面 */,
+				AE786A0B1A7B6DD500367E92 /* SRWebSocket聊天 */,
 				AE6883751A79D49600432947 /* MJRefreshView */,
 				AE703F711A64C7BF00B91B7A /* KVNProgress透明指示层 */,
 				AE5C59FB1A63687C0036A67B /* Toast提示 */,
@@ -870,10 +933,13 @@
 				AE0B103A1A690A49000AA8D7 /* OrderDetailViewController.m in Sources */,
 				AE5C59EB1A63601A0036A67B /* SDWebImageManager.m in Sources */,
 				AE0B10151A68B152000AA8D7 /* Tenant.m in Sources */,
+				AE786A3A1A7B6F0900367E92 /* MessageCellone.m in Sources */,
 				AE703F771A64C84B00B91B7A /* UIImage+KVNEmpty.m in Sources */,
 				AEE5F2CF1A67BF3600B3A1D2 /* MainViewController.m in Sources */,
 				AE6883841A79D4CA00432947 /* MJRefreshHeaderView.m in Sources */,
+				AE786A3C1A7B6F0900367E92 /* NSString+Extension.m in Sources */,
 				AE6883811A79D4CA00432947 /* MJRefreshBaseView.m in Sources */,
+				AE786A371A7B6F0900367E92 /* CellFrameModel.m in Sources */,
 				AE0B10411A691024000AA8D7 /* OrderDetailCellTwo.m in Sources */,
 				AE8EF83A1A689892005BDAFA /* MyReRaiseViewController.m in Sources */,
 				AE82C4511A5D24CC0047E08E /* iuiueCHKeychain.m in Sources */,
@@ -884,12 +950,13 @@
 				AE5C59E71A63601A0036A67B /* SDWebImageCompat.m in Sources */,
 				AE82C4261A5D1DF70047E08E /* ViewController.m in Sources */,
 				AE8EF8311A68984F005BDAFA /* HelpViewController.m in Sources */,
+				AE786A391A7B6F0900367E92 /* iuiueChatViewController.m in Sources */,
 				AE703F7C1A64C85600B91B7A /* KVNProgress.m in Sources */,
 				AE6883831A79D4CA00432947 /* MJRefreshFooterView.m in Sources */,
 				AE5C59FE1A6368B20036A67B /* Toast+UIView.m in Sources */,
 				AE79B8CF1A6E04B200649545 /* MYViewController.m in Sources */,
+				AE6E0E121A7F18B2001CE038 /* iuiueChatListViewController.m in Sources */,
 				AE6883821A79D4CA00432947 /* MJRefreshConst.m in Sources */,
-				AE82C4571A5D2D440047E08E /* ChatViewController.m in Sources */,
 				AE8EF8341A689866005BDAFA /* RoomCountViewController.m in Sources */,
 				AE762A8C1A70F2BF00EC7D18 /* ForgetPWController.m in Sources */,
 				AEE5F2D91A67C11200B3A1D2 /* OrderRemindViewController.m in Sources */,
@@ -922,10 +989,13 @@
 				AE5C59E41A63601A0036A67B /* README.md in Sources */,
 				AE5C59EE1A63601A0036A67B /* UIImage+GIF.m in Sources */,
 				AE0B102B1A68BF77000AA8D7 /* OrderRemindCellOne.m in Sources */,
+				AE786A3D1A7B6F0900367E92 /* UIImage+ResizeImage.m in Sources */,
 				AE79B8D91A6E590C00649545 /* MessageRemindTableViewController.m in Sources */,
+				AE786A0E1A7B6E0B00367E92 /* SRWebSocket.m in Sources */,
 				AE5C59E91A63601A0036A67B /* SDWebImageDownloader.m in Sources */,
 				AE0B10121A68B0D7000AA8D7 /* Room.m in Sources */,
 				AE82C4201A5D1DF70047E08E /* main.m in Sources */,
+				AE786A3B1A7B6F0900367E92 /* MessageModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9iX-hS-Us4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9iX-hS-Us4">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
@@ -1080,7 +1080,7 @@
         <!--聊天-->
         <scene sceneID="gC7-8V-F6I">
             <objects>
-                <viewController id="Cy0-ib-Ese" customClass="ChatViewController" sceneMemberID="viewController">
+                <viewController id="Cy0-ib-Ese" customClass="iuiueChatListViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5N1-XP-ph6"/>
                         <viewControllerLayoutGuide type="bottom" id="Qzc-3a-hN5"/>
